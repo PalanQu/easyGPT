@@ -1,0 +1,12 @@
+uv run python train.py config/train_shakespeare_char.py \
+  --n_layer=1 \
+  --n_head=1 \
+  --n_embd=32 \
+  --block_size=64 \
+  --batch_size=16 \
+  --max_iters=300 \
+  --lr_decay_iters=300 \
+  --eval_interval=50 \
+  --eval_iters=20 \
+  --compile=False \
+  --device=cuda
